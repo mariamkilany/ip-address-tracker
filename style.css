@@ -1,0 +1,148 @@
+*{
+    font-family: 'Rubik', sans-serif;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.bg-img{
+    background-image: url(./images/pattern-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.container-fluid{
+    height: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    position: relative;
+}
+.bg1{
+    height: 30%;
+}
+.bg2{
+    height: 70%;
+}
+.col{
+    height: 100%;
+}
+.abs{
+    height: 40%;
+    position: absolute;
+    top:5%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+}
+.abs .row{
+    width: 100%;
+}
+.row {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+input[type="text"]{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+    padding-left: 25px;
+}
+::placeholder{
+    color: rgb(187, 177, 177) !important;
+}
+.btn{
+    position: absolute;
+    right: 15px;
+    border-radius: 10px !important;
+    height: 50px;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    background-color: black;
+    color: white;
+    font-weight: 700 !important;
+    width: 50px;
+}
+.btn:hover{
+    background-color: hsl(0deg 0% 25%);
+    color: white !important;
+}
+h2{
+    font-weight: 700 !important;
+    color: white !important;
+}
+.info{
+    height: 30%;
+}
+.info-w{
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 15px;
+    box-shadow: #00000017 1px 11px 11px 0px;
+    z-index: 5 !important;
+}
+.heading{
+    color: hsl(0, 0%, 59%);
+    font-weight: 500;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.contant{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(0, 0%, 17%);
+    position: relative;
+    overflow-wrap:break-word;
+}
+.isp::after{
+    display: none;
+}
+#map{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.withOutIndx{
+    z-index: 5 !important;
+}
+.withIndx{
+    z-index: -1 !important;
+}
+.location {
+    position: relative;
+    height: 100%;
+}
+.dir{
+    position: relative;
+    height: fit-content;
+    padding: 10px;
+}
+.line{
+    content: "";
+    background-color: hsl(0, 0%, 59%);
+    height: 80px;
+    width: 1px;
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    right: 0;
+}
+@media only screen and (max-width: 768px) {
+    .line{
+        display: none;
+    }
+    }
