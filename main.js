@@ -35,7 +35,7 @@ btn.onclick=()=>{
                 let isp = document.querySelector(`.isp`)
                 ip.innerHTML=res.ip
                 location.innerHTML=`${res.location.country}<br>${res.location.region}`
-                time.innerHTML=res.location.timezone
+                time.innerHTML=`UTC-${res.location.timezone}`
                 isp.innerHTML=res.isp
                 if(marker != undefined){
                     map.removeLayer(marker);
